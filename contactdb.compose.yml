@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: contactdb
+    environment:
+      MYSQL_ROOT_PASSWORD: rootadmin
+      MYSQL_DATABASE: contactdb_compose
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: rootadmin
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8080:8080"
