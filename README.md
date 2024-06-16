@@ -1,7 +1,3 @@
-Aqui está a documentação profissional do projeto **contactDb_Setup** em Markdown, formatada de maneira clara e organizada, como seria feita por um DBA sênior.
-
----
-
 # ContactDb_Setup
 
 ## Descrição
